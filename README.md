@@ -9,7 +9,7 @@ $ cp .env.example .env
 $ docker-compose up -d
 $ docker-compose exec app composer install
 $ docker-compose exec app php artisan cache:clear
-$ docker-compose exec php artisan queue:listen
+$ docker-compose exec app php artisan queue:listen
 ```
 
 After completing the steps, you should be able to access the application via http://127.0.0.1:8080
